@@ -37,13 +37,13 @@ tl.append(data.Event(
         "meeting with Boss"
     ))
 
-print 'conflict', util.isConflict(tl.events)
+print 'conflict', util.isConflict(tl)
 s = data.State()
 
 pair = util.whatNow(tl, datetime.datetime.combine(today, datetime.time(hour=10, minute=0)))
 
 currentEvent, it = pair
-nextEvent = next(it)
+nextEvent = it.next()
 
 print 'current', currentEvent
 print 'next', nextEvent

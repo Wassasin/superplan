@@ -21,12 +21,44 @@ class Event:
         result += self.description
         return result
 
+class BiIterator:
+    def __init__(self, subject):
+        self.i = 0
+        self.subject = subject
+
+    def next(self):
+        if self.i >= len(self.subject):
+            raise StopIteration
+
+        self.i += 1
+        return self.current()
+
+    def prev(self):
+        if self.i <= 0:
+            raise StopIteration
+
+        self.i -= 1
+        return self.current()
+
+    def current(self):
+        return self.subject[self.i]
+
 class Timeline:
+
     def __init__(self):
         self.events = []
 
+    def __len__(self):
+        return len(self.events)
+
+    def __getitem__(self, i):
+        return self.events[i]
+
     def append(self, e):
         self.events.append(e)
+
+    def iter(self):
+        return BiIterator(self)
 
 class State:
     def __init__(self):
