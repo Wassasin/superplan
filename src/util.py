@@ -58,7 +58,8 @@ def whatNow(timeline, now):
                 e = it.next()
                 if e.startTime is not None: # fixed task
                     if now < e.startTime: # before start
-                        return None # free time
+                        it.prev() # rewind, we've currently got free time
+                        return (None, it) # free time
                     time = e.startTime
                 time += e.duration
 
