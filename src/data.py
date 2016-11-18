@@ -9,8 +9,17 @@ class Event:
         self.participants = participants
 
     def __str__(self):
-        params = [self.startTime, self.duration, self.location, self.description]
-        return ' '.join(map(str, filter(lambda x: x is not None, params)))
+        result = ''
+        if self.startTime is None:
+            result += 'Fluid '
+        else:
+            result += 'Fixed '
+            result += str(self.startTime) + ' to ' + str(self.startTime + self.duration) + ' '
+
+        result += '(' + str(self.duration) + ') '
+        result += '@ ' + str(self.location) + ' '
+        result += self.description
+        return result
 
 class Timeline:
     def __init__(self):
