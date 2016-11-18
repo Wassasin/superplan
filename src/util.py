@@ -23,9 +23,6 @@ def findFirstConcrete(events):
         return (None, None)
 
 def isConflict(events):
-    if len(events) == 0:
-        return True
-
     (first, it) = findFirstConcrete(events)
     if first is None:
         return True
@@ -43,3 +40,33 @@ def isConflict(events):
         pass
 
     return False
+
+def whatNow(timeline, now):
+    (first, it) = findFirstConcrete(timeline.events)
+    if first is None:
+        return True
+
+    time = first.startTime
+
+    if now > time: # later then first fixed task
+        if now < time + first.duration: # during first fixed task
+            return (first, it)
+        time += first.duration
+
+        try:
+            while True:
+                e = next(it)
+                if e.startTime is not None: # fixed task
+                    if now < e.startTime: # before start
+                        return None # free time
+                    time = e.startTime
+                time += e.duration
+
+                if now < time: # during this task
+                    return (e, it)
+        except StopIteration:
+            pass
+    else: # before first fixed task, calculate back?
+        raise NotImplementedError() # TODO
+
+    return None # free time, after everything else
