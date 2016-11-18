@@ -67,6 +67,13 @@ def whatNow(timeline, now):
         except StopIteration:
             pass
     else: # before first fixed task, calculate back?
-        raise NotImplementedError() # TODO
+        try:
+            while True:
+                e = it.prev()
+                time -= e.duration
+                if now >= time: # later then start of this task
+                    return (e, it)
+        except StopIteration:
+            pass
 
     return None # free time, after everything else

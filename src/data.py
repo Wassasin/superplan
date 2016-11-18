@@ -27,7 +27,7 @@ class BiIterator:
         self.subject = subject
 
     def next(self):
-        if self.i >= len(self.subject):
+        if self.i >= len(self.subject)-1:
             raise StopIteration
 
         self.i += 1

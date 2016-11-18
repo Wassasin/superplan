@@ -26,7 +26,7 @@ tl.append(data.Event(
     ))
 tl.append(data.Event(
         None,
-        datetime.timedelta(hours=1, minutes=10),
+        datetime.timedelta(hours=1, minutes=0),
         None,
         "lunch"
     ))
@@ -40,7 +40,7 @@ tl.append(data.Event(
 print 'conflict', util.isConflict(tl)
 s = data.State()
 
-pair = util.whatNow(tl, datetime.datetime.combine(today, datetime.time(hour=10, minute=0)))
+pair = util.whatNow(tl, datetime.datetime.combine(today, datetime.time(hour=7, minute=30)))
 
 currentEvent, it = pair
 nextEvent = it.next()
