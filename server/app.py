@@ -7,12 +7,15 @@ import geo
 import config
 import plan
 
+
 def debug(obj):
     print(obj, file=sys.stderr)
+
 
 app = Flask("superplan")
 
 timeline = mock.timeline
+
 
 def object_to_dict(obj):
     """Utility function for converting class objects to dictionaries."""
@@ -34,6 +37,7 @@ def object_to_dict(obj):
             element = object_to_dict(val)
         result[key] = element
     return dict(result)
+
 
 @app.route("/")
 def root():
@@ -68,4 +72,4 @@ def resolveMove(eventId):
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host='0.0.0.0', debug=True)

@@ -1,6 +1,7 @@
 import data
 import datetime
 
+
 def findFirstConcrete(timeline):
     it = timeline.begin()
     try:
@@ -10,6 +11,7 @@ def findFirstConcrete(timeline):
                 return it
     except StopIteration:
         return None
+
 
 def isConflict(timeline):
     it = findFirstConcrete(timeline)
@@ -29,6 +31,7 @@ def isConflict(timeline):
         pass
 
     return False
+
 
 def whatNow(timeline, now):
     it = findFirstConcrete(timeline)
@@ -65,4 +68,4 @@ def whatNow(timeline, now):
         except StopIteration:
             pass
 
-    return None # free time, after everything else
+    return None  # free time, after everything else
