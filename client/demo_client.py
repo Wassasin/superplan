@@ -1,5 +1,4 @@
 import requests
-import sys
 import time
 
 
@@ -21,7 +20,7 @@ class Client:
 
     def __init__(self):
         self.server_url = 'http://127.0.0.1:5000/'
-        self.refresh_rate = 1  # Refresh rate in seconds
+        self.refresh_rate = 5  # Refresh rate in seconds
         self.previous_state = ClientState(None, None)
 
     def run(self):
@@ -41,8 +40,10 @@ class Client:
 
             time.sleep(self.refresh_rate)
 
+
     def get_new_state(self):
-        prompts = self.get_prompts()
+        time = None
+        prompts = self.get_prompts(time)
         schedule = self.get_schedule()
         state = ClientState(prompts, schedule)
         return state

@@ -2,16 +2,22 @@ from __future__ import print_function
 from flask import Flask, jsonify, request
 import sys
 import datetime
-from server import mock, config, plan
+from server import config, plan
 from server.apis import geo
+
+# Mocking for demo
+from server import (
+    mock, mock_scenario2
+)
+
+timeline = None
+
 
 def debug(obj):
     print(obj, file=sys.stderr)
 
 
 app = Flask("superplan")
-
-timeline = mock.timeline
 
 
 def object_to_dict(obj):
@@ -52,7 +58,14 @@ def getSchedule():
 
 
 @app.route("/prompts")
-def getPrompts():
+def getPrompts(time=None):
+    if time is not None:
+        # Do mocking.
+        pass
+    else:
+        # Don't do mocking.
+        pass
+
     prompts = []
     return jsonify(prompts=prompts)
 
@@ -68,5 +81,17 @@ def resolveMove(eventId):
     return jsonify(action="resolveMove", eventId=eventId, newTime=newTime)
 
 
+def select_scenario(scenario_nr=0):
+    if scenario_nr == 0:
+        return mock.timeline
+    if scenario_nr == 1:
+        raise NotImplementedError
+    if scenario_nr == 2:
+        return mock_scenario2.timeline
+
+
 if __name__ == "__main__":
+    global timeline
+
+    timeline = select_scenario(scenario_nr=2)
     app.run(host='0.0.0.0', debug=True)

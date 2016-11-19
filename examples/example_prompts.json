@@ -1,4 +1,4 @@
-{
+[{
   "ID": "1",
   "Description": "Your train had some delay, we can take the bus, subway or next train, they all take about the same time.",
   "Answers": [
@@ -6,7 +6,7 @@
     { "ID": "2", "Description": "Subway" },
     { "ID": "3", "Description": "Train" }
   ]
-}
+},
 
 {
   "ID": "2",
@@ -25,4 +25,4 @@
       "ID": "4", "Description": "Walking, +10 minutes"
     }
   ]
-}
+}]

@@ -1,0 +1,21 @@
+Similar to the first scenario, but now there's a major traffic jam!
+It's 6AM and it's dark outside.
+
+Your alarm is set to go off around 7AM, depending on where you are in your sleep cycle.
+
+However, your usual daily commute is delayed by at least an hour because of a horrible accident! Side routes are clogged.
+
+The device reads from your calendar that you have an important business meeting at 09:00. Alternative itineraries are available, but none of them leave time for your morning routines. The device goes to Defcon 1 and decides to wake you up early for input.
+
+[Waking Tune plays at 6:13]
+"Good morning Human! I'm sorry to wake you up so early, Human. I see you have a business meeting, but there has been a traffic incident and your usual commute is unavailable."
+
+[Show traffic situation]
+
+"Here are some alternative options."
+
+[List options A, B or sleep in.]
+
+User choses 'sleep in'.
+
+"Understood, have some more rest! I will notify your appointment with the reason of your absence. Your alarm will go off at 07:00."
