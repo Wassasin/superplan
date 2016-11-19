@@ -12,6 +12,7 @@ import data
 
 import datetime
 
+
 def findFirstConcrete(timeline):
     it = timeline.iter()
     try:
@@ -21,6 +22,7 @@ def findFirstConcrete(timeline):
                 return (e, it)
     except StopIteration:
         return (None, None)
+
 
 def isConflict(timeline):
     (first, it) = findFirstConcrete(timeline)
@@ -41,6 +43,7 @@ def isConflict(timeline):
 
     return False
 
+
 def whatNow(timeline, now):
     (first, it) = findFirstConcrete(timeline)
     if first is None:
@@ -56,10 +59,10 @@ def whatNow(timeline, now):
         try:
             while True:
                 e = it.next()
-                if e.startTime is not None: # fixed task
-                    if now < e.startTime: # before start
-                        it.prev() # rewind, we've currently got free time
-                        return (None, it) # free time
+                if e.startTime is not None:  # fixed task
+                    if now < e.startTime:  # before start
+                        it.prev()  # rewind, we've currently got free time
+                        return (None, it)  # free time
                     time = e.startTime
                 time += e.duration
 
@@ -72,9 +75,9 @@ def whatNow(timeline, now):
             while True:
                 e = it.prev()
                 time -= e.duration
-                if now >= time: # later then start of this task
+                if now >= time:  # later then start of this task
                     return (e, it)
         except StopIteration:
             pass
 
-    return None # free time, after everything else
+    return None  # free time, after everything else

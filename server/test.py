@@ -5,6 +5,7 @@ import data
 import mock
 import util
 from server.apis import geo
+from server.apis import weather
 
 today = mock.today
 tl = mock.timeline
@@ -24,3 +25,6 @@ conf = config.Config()
 
 g = geo.Geo(conf.get('google-key'))
 print g.directions('Jadelaan 2 Utrecht', 'MeteoGroup Wageningen', arrival=nextEvent.startTime, mode="driving")
+
+w = weather.WeatherAPI(conf.get('darksky-key'))
+w.get(50, 3)

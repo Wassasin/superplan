@@ -11,6 +11,7 @@ app = Flask("superplan")
 
 timeline = mock.timeline
 
+
 def object_to_dict(obj):
     """Utility function for converting class objects to dictionaries."""
     if isinstance(obj, datetime.timedelta):
