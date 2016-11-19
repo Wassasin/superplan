@@ -37,5 +37,7 @@ timeline.append(data.Event(
         "meeting with Boss"
     ))
 
-
 weather = w.WeatherResponse()
+
+def prompt_generator():
+    None

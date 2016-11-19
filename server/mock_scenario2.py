@@ -1,5 +1,6 @@
 import data
 import datetime
+from datetime import time
 import server.apis.weather as w
 
 today = datetime.datetime.now().date()
@@ -39,3 +40,25 @@ timeline.append(data.Event(
 
 
 weather = w.WeatherResponse()
+
+
+def prompt_generator(query_time):
+
+    if time(hour=0) < query_time <= time(hour=5, minute=30):
+        prompt = []
+    elif time(hour=5, minute=30) < query_time:
+        # TODO TdR 19/11/16: move to file.
+        prompt = {
+          "ID": "1",
+          "Description": "It was freezing last night, "
+                         "so I woke you up half an hour early "
+                         "to make sure you are on time. Hope "
+                         "you slept well. Prepare for a cold "
+                         "and sunny day: clear the ice of your "
+                         "windows and don't forget your gloves "
+                         "and sunglasses.",
+          "Answers": [{ "ID": "1", "Description": "OK"}]
+        }
+    else:
+        prompt = []
+    return prompt

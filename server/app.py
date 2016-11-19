@@ -13,6 +13,9 @@ from server import (
 global timeline
 timeline = None
 
+global prompt_generator
+prompt_generator = None
+
 global commutePlanner
 commutePlanner = None
 
@@ -60,16 +63,18 @@ def getSchedule():
     return jsonify(events=events)
 
 
-@app.route("/prompts")
-def getPrompts(time=None):
+@app.route("/prompts", methods=["GET"])
+def getPrompts():
+    time = request.args.get('time', None)
+    hours = time[:2]
+    minutes = time[3:5]
+    time = datetime.time(hour=int(hours), minute=int(minutes))
     if time is not None:
         # Do mocking.
-        pass
+        prompts = prompt_generator(time)
     else:
         # Don't do mocking.
-        pass
-
-    prompts = []
+        prompts = []
     return jsonify(prompts=prompts)
 
 
@@ -86,15 +91,16 @@ def resolveMove(eventId):
 
 def select_scenario(scenario_nr=0):
     if scenario_nr == 0:
-        return mock.timeline
+        return mock.timeline, mock.prompt_generator
     if scenario_nr == 1:
         raise NotImplementedError
     if scenario_nr == 2:
-        return mock_scenario2.timeline
+        return mock_scenario2.timeline, mock_scenario2.prompt_generator
 
 
 if __name__ == "__main__":
-    timeline = select_scenario(scenario_nr=2)
+
+    timeline, prompt_generator = select_scenario(scenario_nr=2)
     commutePlanner = plan.CommutePlanner()
 
     app.run(host='0.0.0.0', debug=True)
