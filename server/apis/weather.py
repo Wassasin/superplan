@@ -7,7 +7,7 @@ from server.cache import Cache
 class WeatherResponse:
 
     def __init__(self):
-        pass
+        self.has_frozen_for_request = True
 
 
 class WeatherAPI:

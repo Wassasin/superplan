@@ -33,6 +33,7 @@ def object_to_dict(obj):
         result[key] = element
     return dict(result)
 
+
 @app.route("/")
 def root():
     return jsonify(
@@ -64,4 +65,4 @@ def resolveMove(eventId):
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host='0.0.0.0', debug=True)
