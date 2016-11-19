@@ -8,9 +8,9 @@ class Geo:
         self.gmaps = googlemaps.Client(key=key)
         self.cache = Cache('geo')
 
-    def directions(self, a, b, arrival):
-        key = '-'.join(map(str, [a, b, arrival]))
+    def directions(self, a, b, arrival=None, mode=["transit", "driving"]):
+        key = '-'.join(map(str, [a, b, arrival, mode]))
         return self.cache.handle(
             key,
             lambda: self.gmaps.directions(
-                a, b, mode="transit", arrival_time=arrival))
+                a, b, mode=mode, arrival_time=arrival))

@@ -1,0 +1,934 @@
+{
+  "Jadelaan 2 Utrecht-MeteoGroup Wageningen-None": [
+    {
+      "overview_polyline": {
+        "points": "_{y|Hi{g^mACa@rCeB{@w@CG~@mBGk@WQPYYCCSj@SVQMKf@w@~DQn@u@][k@][HYnAmFzDsOlCwKfBsH|BeJ`AiDpAgDxB}FbCaFxAaCjCsDrAqBzAoCpBoEv@uB~@qCrBoHhCcMlIac@dMuo@d@{BrBoLlB{Mt@kHVeD`@{E\\wFd@sKPmIF{CB{C@wJSoSg@kc@oAafAmAaeAk@id@uAwjAeCexBm@qg@M}QAiGIu_@AsFS}fAQiy@Mek@K_z@Osp@Mgm@QkeAO_}@I}^?{PCkHMmf@Cu]B{BHaFXcJd@oJ^yFd@yFbAyJhCaRhAwHnC}QvQylAdKcq@dBmLzCcSfIaj@dFs]dA_IdA{Jv@{Jb@{G^uJPkHV_WT{XRg^NySh@ms@Z}g@`AumAVi[d@qOT}Ed@iDp@_D|@yCRc@lBsDh@u@pBoBfCcCtImHvJsId@g@`CuC|BqDhAsBjAoC`BsEx@qC~CcNfMyl@fGwYnEcT~U_iA`EiRhFyVzIgb@fFgV`C_LnHc^^gBtBgJpAaElB{E`AsBtAgCdBkCd@k@zAgBpBwBpEoEv@u@GQjBgBh@g@TQvDyBhHwErHaFfIkFjUcOzDsBxVyLv@a@rPiIpMiGfOgHnk@aYfh@}VnPyHhWwLbGwCtVsLlCuAvEoBtBs@~Bk@~AU|BUjFMxE^dD`@l@F`HnAzKvA|Df@hGlA?IdHsGTyFj@uGrAcPbB{S~@gLXsCZyDAKZwAC_Af@aHJ_FAiEDaEQ_AWqGKyB]sFUkBm@oGm@oHQiF@yATkB`@_Bp@cAdBiB\\o@Tm@F_@RyADq@A]Gk@Oo@KU[sA[QUe@]gA[}BgBkT}Bk[qEwf@Iy@c@cFoB_VoBaVS_CFm@_@cBO_CoAyNiA_LSeBu@{F{@_EQq@_@yBD[M?Kq@BWHOFW@MC]EML}@DGHeAAm@_@iEw@gICoB{@aHqB{Tk@sE[qB]wAcAaEa@_By@cB?QO?y@?M@KBa@E}B`Ai@d@gEtCiCbB_@Po@l@OJe@LBPq@n@aA`AaA\\aAoTYkHSmESyEUuBQ{CCcA?BCiCWeCQj@OcK?BKKD|ACrC"
+      },
+      "warnings": [
+        "Walking directions are in beta.    Use caution – This route may be missing sidewalks or pedestrian paths."
+      ],
+      "bounds": {
+        "northeast": {
+          "lat": 52.0785566,
+          "lng": 5.66832
+        },
+        "southwest": {
+          "lat": 51.95435,
+          "lng": 5.122364
+        }
+      },
+      "waypoint_order": [],
+      "summary": "",
+      "copyrights": "Map data ©2016 GeoBasis-DE/BKG (©2009), Google",
+      "legs": [
+        {
+          "distance": {
+            "text": "46.4 km",
+            "value": 46395
+          },
+          "traffic_speed_entry": [],
+          "end_address": "Wageningen, Netherlands",
+          "via_waypoint": [],
+          "start_address": "Jadelaan 2, 3523 CV Utrecht, Netherlands",
+          "arrival_time": {
+            "text": "11:43am",
+            "time_zone": "Europe/Amsterdam",
+            "value": 1479552180
+          },
+          "steps": [
+            {
+              "html_instructions": "Walk to Utrecht Vaartsche Rijn",
+              "distance": {
+                "text": "0.5 km",
+                "value": 514
+              },
+              "travel_mode": "WALKING",
+              "start_location": {
+                "lat": 52.0748762,
+                "lng": 5.124526400000001
+              },
+              "polyline": {
+                "points": "_{y|Hi{g^O?o@AMC?@a@rCeB{@IAm@AEXAd@mBGk@WOPA?A?WYCCSj@EFMNIEGGERERETUfAShAGVGVIVu@][k@"
+              },
+              "duration": {
+                "text": "7 mins",
+                "value": 402
+              },
+              "steps": [
+                {
+                  "html_instructions": "Head <b>north</b> on <b>Jadelaan</b> toward <b>Saffierlaan</b>",
+                  "distance": {
+                    "text": "44 m",
+                    "value": 44
+                  },
+                  "travel_mode": "WALKING",
+                  "start_location": {
+                    "lat": 52.0748762,
+                    "lng": 5.124526400000001
+                  },
+                  "polyline": {
+                    "points": "_{y|Hi{g^O?o@AMC"
+                  },
+                  "duration": {
+                    "text": "1 min",
+                    "value": 33
+                  },
+                  "end_location": {
+                    "lat": 52.0752712,
+                    "lng": 5.1245574
+                  }
+                },
+                {
+                  "html_instructions": "Turn <b>left</b> toward <b>Tolsteegplantsoen</b>",
+                  "distance": {
+                    "text": "55 m",
+                    "value": 55
+                  },
+                  "maneuver": "turn-left",
+                  "duration": {
+                    "text": "1 min",
+                    "value": 38
+                  },
+                  "travel_mode": "WALKING",
+                  "polyline": {
+                    "points": "m}y|Ho{g^?@a@rC"
+                  },
+                  "start_location": {
+                    "lat": 52.0752712,
+                    "lng": 5.1245574
+                  },
+                  "end_location": {
+                    "lat": 52.0754378,
+                    "lng": 5.1238072
+                  }
+                },
+                {
+                  "html_instructions": "Turn <b>right</b> toward <b>Tolsteegplantsoen</b>",
+                  "distance": {
+                    "text": "92 m",
+                    "value": 92
+                  },
+                  "maneuver": "turn-right",
+                  "duration": {
+                    "text": "1 min",
+                    "value": 69
+                  },
+                  "travel_mode": "WALKING",
+                  "polyline": {
+                    "points": "o~y|Hyvg^eB{@IAm@A"
+                  },
+                  "start_location": {
+                    "lat": 52.0754378,
+                    "lng": 5.1238072
+                  },
+                  "end_location": {
+                    "lat": 52.0762325,
+                    "lng": 5.124134499999999
+                  }
+                },
+                {
+                  "html_instructions": "Turn <b>left</b> onto <b>Tolsteegplantsoen</b>",
+                  "distance": {
+                    "text": "23 m",
+                    "value": 23
+                  },
+                  "maneuver": "turn-left",
+                  "duration": {
+                    "text": "1 min",
+                    "value": 18
+                  },
+                  "travel_mode": "WALKING",
+                  "polyline": {
+                    "points": "mcz|Hyxg^EXAd@"
+                  },
+                  "start_location": {
+                    "lat": 52.0762325,
+                    "lng": 5.124134499999999
+                  },
+                  "end_location": {
+                    "lat": 52.0762716,
+                    "lng": 5.1238072
+                  }
+                },
+                {
+                  "html_instructions": "Turn <b>right</b> to stay on <b>Tolsteegplantsoen</b>",
+                  "distance": {
+                    "text": "0.1 km",
+                    "value": 118
+                  },
+                  "maneuver": "turn-right",
+                  "duration": {
+                    "text": "1 min",
+                    "value": 87
+                  },
+                  "travel_mode": "WALKING",
+                  "polyline": {
+                    "points": "ucz|Hyvg^mBGk@WOPA?A?WYCC"
+                  },
+                  "start_location": {
+                    "lat": 52.0762716,
+                    "lng": 5.1238072
+                  },
+                  "end_location": {
+                    "lat": 52.077278,
+                    "lng": 5.1240337
+                  }
+                },
+                {
+                  "html_instructions": "Turn <b>left</b> toward <b>Briljantlaan</b>",
+                  "distance": {
+                    "text": "33 m",
+                    "value": 33
+                  },
+                  "maneuver": "turn-left",
+                  "duration": {
+                    "text": "1 min",
+                    "value": 24
+                  },
+                  "travel_mode": "WALKING",
+                  "polyline": {
+                    "points": "_jz|Hexg^Sj@EFMN"
+                  },
+                  "start_location": {
+                    "lat": 52.077278,
+                    "lng": 5.1240337
+                  },
+                  "end_location": {
+                    "lat": 52.0774845,
+                    "lng": 5.123688599999999
+                  }
+                },
+                {
+                  "html_instructions": "Turn <b>right</b> onto <b>Briljantlaan</b>",
+                  "distance": {
+                    "text": "11 m",
+                    "value": 11
+                  },
+                  "maneuver": "turn-right",
+                  "duration": {
+                    "text": "1 min",
+                    "value": 7
+                  },
+                  "travel_mode": "WALKING",
+                  "polyline": {
+                    "points": "gkz|Havg^IEGG"
+                  },
+                  "start_location": {
+                    "lat": 52.0774845,
+                    "lng": 5.123688599999999
+                  },
+                  "end_location": {
+                    "lat": 52.0775714,
+                    "lng": 5.1237563
+                  }
+                },
+                {
+                  "html_instructions": "Turn <b>left</b> onto <b>Baden-Powellweg</b>",
+                  "distance": {
+                    "text": "0.1 km",
+                    "value": 106
+                  },
+                  "maneuver": "turn-left",
+                  "duration": {
+                    "text": "2 mins",
+                    "value": 97
+                  },
+                  "travel_mode": "WALKING",
+                  "polyline": {
+                    "points": "ykz|Hovg^ERERETUfAShAGVGVIV"
+                  },
+                  "start_location": {
+                    "lat": 52.0775714,
+                    "lng": 5.1237563
+                  },
+                  "end_location": {
+                    "lat": 52.0779962,
+                    "lng": 5.122364
+                  }
+                },
+                {
+                  "html_instructions": "Take the pedestrian tunnel<div style=\"font-size:0.9em\">Destination will be on the right</div>",
+                  "distance": {
+                    "text": "32 m",
+                    "value": 32
+                  },
+                  "travel_mode": "WALKING",
+                  "start_location": {
+                    "lat": 52.0779962,
+                    "lng": 5.122364
+                  },
+                  "polyline": {
+                    "points": "onz|Hwmg^u@][k@"
+                  },
+                  "duration": {
+                    "text": "1 min",
+                    "value": 29
+                  },
+                  "end_location": {
+                    "lat": 52.0784067,
+                    "lng": 5.1227314
+                  }
+                }
+              ],
+              "end_location": {
+                "lat": 52.0784067,
+                "lng": 5.1227314
+              }
+            },
+            {
+              "html_instructions": "Train towards Rhenen",
+              "distance": {
+                "text": "38.4 km",
+                "value": 38393
+              },
+              "duration": {
+                "text": "36 mins",
+                "value": 2160
+              },
+              "travel_mode": "TRANSIT",
+              "polyline": {
+                "points": "aqz|Hapg^][HYdAqEH[H[d@iBvAyFr@sCDQVaAj@_CbAcEh@{B|@wD`A_Ez@eDNm@DMFSb@yA^aAh@sAFO?AVs@v@qB^cAHS|@kBVk@JS`@u@h@y@n@gAdAyAdAyAj@{@f@u@l@eAl@iANYVi@Pa@v@iB^aAVs@Na@n@oBTq@ZoAl@uBRw@`@mB^eB^gBf@gCt@yDl@aDVwAZyAXyA|@yEDQvAmHpCsNrC{NPy@lCkNTmANm@z@yEv@uE`AuGj@eEt@kHVeD`@{E\\wFVmFLeDJ}DDoC@a@DyB@yA@aA@qC?eFE_HCcCE}BCmBOkNMkKAw@G{EIeGEuDMaKMwKMqKO{K?QEkEAq@IwIOyKMoKMmKK{IIqG?Q?QA[?O?OMgJMaLMqIAa@Ac@MaLM_LM_KKkIOwLKkJ[cYIcHIwGKgIGmFGmGA]Aw@IsGCoCGwDEqEG_EEwDK_J?E?M?OG_FKwGIqHEsDCwCE}BEyDCeDAsCAiBAyD?g@?S?S?q@AqCAaDAmE?qB?]A{CAuD?O?QAO?I?Q?Q?M?eCAuFA_EAwFAyGC{HE}WAa@?yDC{G?sDAu@?s@AaC?aFC_KEkPEaQCmPCeG?OEgd@EwTGqUGaZAoHEqOEuO?oBAu@?u@C_TK_m@EePCaOCmNAiLCkLC_M?EAkC?mB?uCAgC@oDAsDAwBMmf@Cu]@}@@}@DcCB}ALyEJiCL{CVsELmBPkCd@yFbAyJLcAzB}O^gCh@oDJk@Hk@hAuHn@oElAgIrGwb@xB{NzB}NbEaX`EaXx@uFj@wD`AkG^eCXkB^eC`@iCf@iD~@oGDWLy@d@iD~@gGbAyGbAeHr@}Ex@qFr@}Eb@_D`@_Df@sE\\gD\\sDXgEVqDJiBPuDL_EJiDDaCB_BBgCDgEHoIHcL@o@DiEB}CBcCD}GDaGBcIDwEBuDBwC@sBDgFBqCDeEBkDByEFsGBgEDkF?G?[Xqf@@Gh@io@DwEDkGJgN@YBeCJiMD_HD_ABiANiFJ}CJeCHwALiAV_BVoAXoA|@yCRc@zAsCP_@Va@PS\\]t@s@FGTUfCcCtImHvJsId@g@`CuC|BqDhAsBjAoC`BsEx@qC|BuJ`@mBhBoIDOjAsFjGeZDQ`AuE~AuH~AyH^_BFY`AyEdBoIdBeInBgJtAuG`AwEfBmIxA_HtAuGxA_Hp@aDtAuGBMt@cDpAkGz@eEZwA~@oEZ}AZuA^mBfAeFdAcFTcABKzAkH~@oEbAuEDWFY@EH]TeAr@eDNs@FQPy@vA_HdBsItA{GzAgHVkADSBODONs@`AkEr@{Cj@iBd@wA`@kAjAoC`AsBtAgCvA{BLORUPU^_@z@gAh@m@fAiAbBcBlBkBv@u@GQhAgA`@_@^_@HGPMBCvDyBhHwEhHyEHGJGzHcFnSyMz@i@f@YrCyAvLaG`IwDZQZOrPiIpMiGhGuC|FqCZOpVyL|ImEbHiDnXuMvNgHLE`PsHbPsHNIRK`EmB~DmBFENGj@[j@Y~IiE~IiEHEHEbCoAtB_A`Bo@`A]r@U~Bk@~AU|BUjFMxE^dD`@VBTB`HnAzKvA|Df@hGlA?I"
+              },
+              "transit_details": {
+                "num_stops": 6,
+                "headsign": "Rhenen",
+                "departure_stop": {
+                  "location": {
+                    "lat": 52.0784067,
+                    "lng": 5.1227314
+                  },
+                  "name": "Utrecht Vaartsche Rijn"
+                },
+                "arrival_time": {
+                  "text": "11:21am",
+                  "time_zone": "Europe/Amsterdam",
+                  "value": 1479550860
+                },
+                "departure_time": {
+                  "text": "10:45am",
+                  "time_zone": "Europe/Amsterdam",
+                  "value": 1479548700
+                },
+                "line": {
+                  "name": "Breukelen <-> Rhenen SPR7400",
+                  "agencies": [
+                    {
+                      "url": "http://www.ns.nl/",
+                      "phone": "011 31 30 751 5155",
+                      "name": "NS"
+                    }
+                  ],
+                  "short_name": "Sprinter",
+                  "vehicle": {
+                    "type": "HEAVY_RAIL",
+                    "name": "Train",
+                    "icon": "//maps.gstatic.com/mapfiles/transit/iw2/6/rail2.png"
+                  }
+                },
+                "arrival_stop": {
+                  "location": {
+                    "lat": 51.9584487,
+                    "lng": 5.5785012
+                  },
+                  "name": "Rhenen"
+                }
+              },
+              "start_location": {
+                "lat": 52.0784067,
+                "lng": 5.1227314
+              },
+              "end_location": {
+                "lat": 51.9584487,
+                "lng": 5.5785012
+              }
+            },
+            {
+              "html_instructions": "Walk to Rhenen, Station/Tuinlaan",
+              "distance": {
+                "text": "0.2 km",
+                "value": 188
+              },
+              "travel_mode": "WALKING",
+              "start_location": {
+                "lat": 51.9584487,
+                "lng": 5.5785012
+              },
+              "polyline": {
+                "points": "icc|Hsp`a@dHsG"
+              },
+              "duration": {
+                "text": "3 mins",
+                "value": 188
+              },
+              "steps": [
+                {
+                  "distance": {
+                    "text": "0.2 km",
+                    "value": 188
+                  },
+                  "travel_mode": "WALKING",
+                  "duration": {
+                    "text": "3 mins",
+                    "value": 188
+                  },
+                  "polyline": {
+                    "points": "icc|Hsp`a@dHsG"
+                  },
+                  "start_location": {
+                    "lat": 51.9584487,
+                    "lng": 5.5785012
+                  },
+                  "end_location": {
+                    "lat": 51.95698,
+                    "lng": 5.579877
+                  }
+                }
+              ],
+              "end_location": {
+                "lat": 51.95698,
+                "lng": 5.579877
+              }
+            },
+            {
+              "html_instructions": "Bus towards Wageningen Busstation",
+              "distance": {
+                "text": "7.3 km",
+                "value": 7300
+              },
+              "duration": {
+                "text": "13 mins",
+                "value": 780
+              },
+              "travel_mode": "TRANSIT",
+              "polyline": {
+                "points": "czb|Hgy`a@TyFb@mFFg@b@oFPmBDg@V}Cz@cKP{BHcAJwAp@_ILgBRwBD[ZyDAKZwAC_AVaDN_CFsBBkB?}AAkBDaEQ_AM_DIqBA[I}AO}BMuB?CUgBScCYkCi@sGC[A]OkEAk@Bm@Hy@Jq@Lo@Ro@Va@Xa@dBiB\\o@L_@FM@IDUBUF[BQBUD_@?C?E?G?K?G?CAEAKE_@I_@EOKU[sA[QUe@M_@Og@Km@OoA?EgBeT}Bk[qEwf@C_@EYIeAY}CK}Ac@{E_@yE_@kEs@cJg@yFMwAEk@M_BE_@Fm@_@cBGy@GeAmA_NAY]wDk@gFQqAASOuAe@eD]eB]yAI_@GQIg@UqAD[M?GYCW@S@CBEDIDK@K?E@GAI?EAE?GCGAEBMHo@DGHeAAm@_@iEk@gGK_ACoB{@aHqB{Tk@sE[qB]wA[uAg@kBa@_By@cB?QO?k@?M?E?G@KBa@EaBt@[JQRWPMHWRoCjBQJiCbB_@Pg@d@GFOJe@LBPq@n@YVg@h@y@XGBGsAMqCM_D]iHGgBGyACc@EeAE{@EoAC[Ce@KiCGoAIk@KiAEaAEk@A[CQAc@A_@?BCiCWeCQj@GyBGiG?BKKD|ACrC"
+              },
+              "transit_details": {
+                "num_stops": 10,
+                "headsign": "Wageningen Busstation",
+                "departure_stop": {
+                  "location": {
+                    "lat": 51.95698,
+                    "lng": 5.579877
+                  },
+                  "name": "Rhenen, Station/Tuinlaan"
+                },
+                "arrival_time": {
+                  "text": "11:43am",
+                  "time_zone": "Europe/Amsterdam",
+                  "value": 1479552180
+                },
+                "departure_time": {
+                  "text": "11:30am",
+                  "time_zone": "Europe/Amsterdam",
+                  "value": 1479551400
+                },
+                "line": {
+                  "url": "http://www.connexxion.nl/dienstregeling/lijn?ID=E080",
+                  "name": "Amersfoort - Wageningen",
+                  "agencies": [
+                    {
+                      "url": "http://www.connexxion.nl/",
+                      "phone": "011 31 900 2666399",
+                      "name": "Connexxion"
+                    }
+                  ],
+                  "short_name": "80",
+                  "vehicle": {
+                    "type": "BUS",
+                    "name": "Bus",
+                    "icon": "//maps.gstatic.com/mapfiles/transit/iw2/6/bus2.png"
+                  }
+                },
+                "arrival_stop": {
+                  "location": {
+                    "lat": 51.969289,
+                    "lng": 5.667110999999999
+                  },
+                  "name": "Wageningen, Busstation"
+                }
+              },
+              "start_location": {
+                "lat": 51.95698,
+                "lng": 5.579877
+              },
+              "end_location": {
+                "lat": 51.969289,
+                "lng": 5.667110999999999
+              }
+            }
+          ],
+          "departure_time": {
+            "text": "10:38am",
+            "time_zone": "Europe/Amsterdam",
+            "value": 1479548319
+          },
+          "duration": {
+            "text": "1 hour 4 mins",
+            "value": 3861
+          },
+          "end_location": {
+            "lat": 51.969289,
+            "lng": 5.667110999999999
+          },
+          "start_location": {
+            "lat": 52.0748762,
+            "lng": 5.124526400000001
+          }
+        }
+      ]
+    }
+  ],
+  "Jadelaan 2 Utrecht-MeteoGroup Wageningen-None-driving": [
+    {
+      "overview_polyline": {
+        "points": "_{y|Hi{g^tCL?`@GxEeDOAZ?Rp@BRGfBHhCN`@BFFHF|CfAjGtB~NhFnGzBtCv@b@JlAkLbBgPV_B\\{@Xi@BAFEHDVFrATfEhApElAlBl@l@Td@@xHrC`FjBl@XVRXZT\\V`@Vt@f@xA@HBRNj@\\z@RXZ^^T`@L`@BZAXEVM`@U^g@Xk@Tq@Pw@Fw@BgBKqAEQCI?w@GeCDeA^kGr@eMTcFBsAC]v@yMtAqTRaDFqB@mBCwBGqAOoBkAuIWoBOeBm@cLa@gGu@wH_@yCg@yDeA{GsBsKkDePcFqTOYGEeAaFkBmJeBuIiB{JeA}Ge@eEc@gG[yIMuHUqPkAs`A?qFF_FHeDZqHl@mKjEmw@xB_a@j@yLZuLd@iXPqKZkQTkJ`@_PZ}N|@ui@~@{l@v@ka@@e@b@c\\?_MUkIUmFQaDi@gG_@cDaA}G_BwI}HyXa@uA_EuMkGaUkB_JOcAw@aF_@uDg@wFUwDWsFMkIYm`BKwg@Oqs@AgQIwWKwl@?ey@@gvAEsYEyPEmMPsNNuCl@mIrB}OxDoWfKuq@~@}G~BwObA_GrAgHzJuf@xGs\\rG{[t@sDhBeJl@oDf@iD\\cDZcEfBo\\rBg`@ZuHPkGNoK~@uo@~B_bBtA_aAp@ie@PaLPkLLuFb@cKn@eLlAwStEiy@~@oT^cLhLc~CX}EP_CnBgR|Gin@~@aJ^mERuCTmGJkFNuOfAgrAV_[PsQR{HJmBPuDh@uHd@uFb@sDb@iD|@mGbAgGtUcuAbB{JhBkJjBwIlDuNzB_IvDaMpb@kvAfFiPpD}LrGaUrFiS`D_MlJq]xBeI`BsGjDsO`C{LrBcMzAmKhAmJjA{KnAwN~@qNNgAf@mH^cHLgBF_@Xu@R]ROh@I\\BRF`@ZP`@LRJ`@JpBB|@pAYd@M^OdAY`AOpEq@|GeAnA[fBy@t@g@xCwBlDmCr@a@hOyKfFuDZU`ZqTtV}Qv@k@~IuGxEsElOoLrA{@TOBDFBJ@VMHe@@OfIuG~DaDxFmEnDwC^e@bBwD\\w@Le@f@_C`@sDDu@LsAV}Ab@gB`@gAd@_Ah@y@n@u@PEjAu@@BBBBBJ?HIDK?CZWh@a@pB{@j@StA]|AKLFx@Gt@KNKdDUvAYzBk@@B?DBDJFJCDO@I?Cr@Gx@MxAc@jB{@`CeAfASh@A|A[x@MB`@\\vD^dDfCbZ|@`KL|AD^EVd@pFJ\\j@`Ih@bICrCC`AAj@HbCHhBRxEK`@?@"
+      },
+      "warnings": [],
+      "bounds": {
+        "northeast": {
+          "lat": 52.0750146,
+          "lng": 5.6825646
+        },
+        "southwest": {
+          "lat": 51.96905109999999,
+          "lng": 5.1197453
+        }
+      },
+      "waypoint_order": [],
+      "summary": "A12",
+      "copyrights": "Map data ©2016 GeoBasis-DE/BKG (©2009), Google",
+      "legs": [
+        {
+          "distance": {
+            "text": "47.5 km",
+            "value": 47466
+          },
+          "traffic_speed_entry": [],
+          "end_address": "Wageningen, Netherlands",
+          "via_waypoint": [],
+          "start_address": "Jadelaan 2, 3523 CV Utrecht, Netherlands",
+          "start_location": {
+            "lat": 52.0748762,
+            "lng": 5.124526400000001
+          },
+          "steps": [
+            {
+              "html_instructions": "Head <b>south</b> on <b>Jadelaan</b> toward <b>Agaatlaan</b>",
+              "distance": {
+                "text": "83 m",
+                "value": 83
+              },
+              "travel_mode": "DRIVING",
+              "start_location": {
+                "lat": 52.0748762,
+                "lng": 5.124526400000001
+              },
+              "polyline": {
+                "points": "_{y|Hi{g^`AFrAD"
+              },
+              "duration": {
+                "text": "1 min",
+                "value": 23
+              },
+              "end_location": {
+                "lat": 52.0741287,
+                "lng": 5.124455
+              }
+            },
+            {
+              "html_instructions": "Turn <b>right</b> onto <b>Agaatlaan</b>",
+              "distance": {
+                "text": "86 m",
+                "value": 86
+              },
+              "travel_mode": "DRIVING",
+              "maneuver": "turn-right",
+              "start_location": {
+                "lat": 52.0741287,
+                "lng": 5.124455
+              },
+              "polyline": {
+                "points": "ivy|H{zg^?P?NClBCjB"
+              },
+              "duration": {
+                "text": "1 min",
+                "value": 22
+              },
+              "end_location": {
+                "lat": 52.0741664,
+                "lng": 5.123200499999999
+              }
+            },
+            {
+              "html_instructions": "Turn <b>right</b> onto <b>Briljantlaan</b>",
+              "distance": {
+                "text": "93 m",
+                "value": 93
+              },
+              "travel_mode": "DRIVING",
+              "maneuver": "turn-right",
+              "start_location": {
+                "lat": 52.0741664,
+                "lng": 5.123200499999999
+              },
+              "polyline": {
+                "points": "qvy|H_sg^qAGsAG"
+              },
+              "duration": {
+                "text": "1 min",
+                "value": 22
+              },
+              "end_location": {
+                "lat": 52.07500289999999,
+                "lng": 5.1232837
+              }
+            },
+            {
+              "html_instructions": "Turn <b>left</b> onto <b>Saffierlaan</b>",
+              "distance": {
+                "text": "10 m",
+                "value": 10
+              },
+              "travel_mode": "DRIVING",
+              "maneuver": "turn-left",
+              "start_location": {
+                "lat": 52.07500289999999,
+                "lng": 5.1232837
+              },
+              "polyline": {
+                "points": "w{y|Hosg^AL?L"
+              },
+              "duration": {
+                "text": "1 min",
+                "value": 3
+              },
+              "end_location": {
+                "lat": 52.0750109,
+                "lng": 5.1231444
+              }
+            },
+            {
+              "html_instructions": "Turn <b>left</b> at the 1st cross street onto <b>Briljantlaan</b>",
+              "distance": {
+                "text": "0.2 km",
+                "value": 243
+              },
+              "travel_mode": "DRIVING",
+              "maneuver": "turn-left",
+              "start_location": {
+                "lat": 52.0750109,
+                "lng": 5.1231444
+              },
+              "polyline": {
+                "points": "y{y|Hsrg^?Rp@BRGfBHdBJb@B`@BFF@@FDXJZJ"
+              },
+              "duration": {
+                "text": "1 min",
+                "value": 51
+              },
+              "end_location": {
+                "lat": 52.072925,
+                "lng": 5.1227142
+              }
+            },
+            {
+              "html_instructions": "Continue onto <b>W.A. Vultostraat</b>",
+              "distance": {
+                "text": "0.5 km",
+                "value": 511
+              },
+              "travel_mode": "DRIVING",
+              "start_location": {
+                "lat": 52.072925,
+                "lng": 5.1227142
+              },
+              "polyline": {
+                "points": "wny|H}og^r@Vr@VVHXJ`@L`@Nf@Ph@Pr@VNDpBt@pBt@FBHB~@Z~@\\bA\\dA\\"
+              },
+              "duration": {
+                "text": "1 min",
+                "value": 64
+              },
+              "end_location": {
+                "lat": 52.0685012,
+                "lng": 5.120706999999999
+              }
+            },
+            {
+              "html_instructions": "Continue onto <b>Constant Erzeijstraat</b>",
+              "distance": {
+                "text": "0.3 km",
+                "value": 252
+              },
+              "travel_mode": "DRIVING",
+              "start_location": {
+                "lat": 52.0685012,
+                "lng": 5.120706999999999
+              },
+              "polyline": {
+                "points": "csx|Hmcg^fC|@fC|@jAZhAZB@JB"
+              },
+              "duration": {
+                "text": "1 min",
+                "value": 46
+              },
+              "end_location": {
+                "lat": 52.06630999999999,
+                "lng": 5.1197771
+              }
+            },
+            {
+              "html_instructions": "Turn <b>left</b> onto <b>Het Goylaan</b>",
+              "distance": {
+                "text": "0.4 km",
+                "value": 442
+              },
+              "travel_mode": "DRIVING",
+              "maneuver": "turn-left",
+              "start_location": {
+                "lat": 52.06630999999999,
+                "lng": 5.1197771
+              },
+              "polyline": {
+                "points": "mex|Hs}f^HBH@@K@KD]B]RkBHw@VeCHm@Fm@JaAFm@Ho@Dc@Fe@N_B^oDLy@He@L[N_@Vi@"
+              },
+              "duration": {
+                "text": "1 min",
+                "value": 76
+              },
+              "end_location": {
+                "lat": 52.0649291,
+                "lng": 5.125638899999999
+              }
+            },
+            {
+              "html_instructions": "At <b>Het Goyplein</b>, take the <b>1st</b> exit onto the <b>Waterlinieweg</b> ramp to <b>Ring (zuid)</b>/<b>Den Haag</b>/<b>Houten</b>/<b>Arnhem</b>/<b>Breda</b>",
+              "distance": {
+                "text": "0.4 km",
+                "value": 421
+              },
+              "travel_mode": "DRIVING",
+              "maneuver": "roundabout-right",
+              "start_location": {
+                "lat": 52.0649291,
+                "lng": 5.125638899999999
+              },
+              "polyline": {
+                "points": "y|w|Hgbh^@?@A@?@A@?@A@A@?FDJDJ@VBz@Pl@NxCx@`AXnCr@z@Vp@Tl@Td@@"
+              },
+              "duration": {
+                "text": "1 min",
+                "value": 29
+              },
+              "end_location": {
+                "lat": 52.06124519999999,
+                "lng": 5.124388
+              }
+            },
+            {
+              "html_instructions": "Merge onto <b>Waterlinieweg</b>",
+              "distance": {
+                "text": "0.5 km",
+                "value": 466
+              },
+              "travel_mode": "DRIVING",
+              "maneuver": "merge",
+              "start_location": {
+                "lat": 52.06124519999999,
+                "lng": 5.124388
+              },
+              "polyline": {
+                "points": "yew|Hmzg^bC|@tDtAPH@?RHxDvARHXNLHHHJHLPHHJRLPHNJXJZPl@Tj@"
+              },
+              "duration": {
+                "text": "1 min",
+                "value": 39
+              },
+              "end_location": {
+                "lat": 52.05752099999999,
+                "lng": 5.1217005
+              }
+            },
+            {
+              "html_instructions": "At the roundabout, take the <b>3rd</b> exit onto the <b>A12</b>/<b>A27</b> ramp to <b>Ring Utrecht</b>/<b>Amersfoort</b>/<b>Hilversum</b>/<b>Breda</b>/<b>Arnhem</b>",
+              "distance": {
+                "text": "1.2 km",
+                "value": 1208
+              },
+              "travel_mode": "DRIVING",
+              "maneuver": "roundabout-right",
+              "start_location": {
+                "lat": 52.05752099999999,
+                "lng": 5.1217005
+              },
+              "polyline": {
+                "points": "onv|Hsig^?B@D@B?D@B?D@B@BDPDPDNFNFLFLHLHJLNLNNJNHPFNDPBN?L?LAJALCJEJGLGRMNUNQLUJUJWHYH[F[B]BYBY?Y?Y?YAYCYCYAC?CAEACACAEAC?C?s@Cq@Cm@?O?U@_@Be@FcAVgERaD^cHH{AJgCB_A?S?KCQViEVsEBWBc@`@uGR}CLqB"
+              },
+              "duration": {
+                "text": "1 min",
+                "value": 79
+              },
+              "end_location": {
+                "lat": 52.0543768,
+                "lng": 5.1348015
+              }
+            },
+            {
+              "html_instructions": "Keep <b>left</b> at the fork, follow signs for <b>Arnhem</b>/<b>Oberhausen</b>/<b>E35</b>/<b>A12</b> and merge onto <b>A12</b>/<b>E35</b>",
+              "distance": {
+                "text": "36.6 km",
+                "value": 36635
+              },
+              "travel_mode": "DRIVING",
+              "maneuver": "fork-left",
+              "start_location": {
+                "lat": 52.0543768,
+                "lng": 5.1348015
+              },
+              "polyline": {
+                "points": "{zu|Ho{i^PkCJ{AFeAD}@@s@@u@?w@AgAAo@Ai@Eg@Ey@Iu@Gi@Gi@q@oEIq@OiAGe@G{@Gi@Cg@Gy@Cm@]sGCa@KmBGi@ImAc@mEQiBMcAQuAQuAE_@CQKq@E]G[a@iCUwAY_B]gB]gB]cBc@uBc@wBQw@qA_GcBwHaBcHWgAEMGOGIGEeAaFcAaFg@kCu@yDo@{Cu@yDs@aEi@}C[_CS_BQeBScCOcCOmDKkDIgECmBEkCAcAAYKgIEyA{@et@EyDCyB?}A?sCB{CBcA@y@FkBHcCPmDXwEBg@JiBBc@TsDTuEl@cKpB__@b@sHn@mLV}EL_C`@oIHiBN}EJwEFsDLeFDsDH{EH_F@{@By@@{@@y@LaHDyBDuBH}DJmDPiHNuFJkDNqIV}Pd@wWHsDH}Eh@i^@_AB_APeJDgBTkM@k@@[?G@a@?E@_@b@c\\?_MEyBOqEQyDCs@GeAI{AMwA[oDWsBGo@S_Bm@}DuAuHIa@_D}K}C{KUw@?AIYAASq@kDcLkFgR_@yAkAmF_@qBOaA?AO_Ag@aDIy@U{Bg@wFUwDWsFMkIKun@Mwp@GcTCsREsPCcLCaLAwGA_H?sD?y@?y@EsF?wAA_DAkHEaMAgOA{FAqF?kLA}N@kP?oJ?}G?qC?gA?}H?gQ?qA@u]?aI@uDG}SEsO?e@Ae@?i@?k@CqIDmFJeGNuCl@mIb@uDnAgJrDwVDWDU`K_q@~@}G~BwObA_GrAgHvFwXbC}LvBmKxAqHLo@x@cEjEeTfAuFd@{BNw@Nw@f@_C\\cBRiAVwATwAVaBNgALmANuALaBLaBJmBN}B`@}Hh@eKl@kLdA{RLeCLoDHiCFaCF{DFsEHyFDqCDkCh@}^d@{[d@{[r@}g@?IBc@DoDFqDp@cf@BkBDwB?c@FmEBsAZiTNyK@q@FqEHoEPkLLuFLqCTqF`@{GLiCRaDH{ATaEXwEHyALwBVwEDs@l@iKj@{J\\kGf@yIP_EFqAJeCXwGDmALiDDcADgB@YBYb@mLR_GJoCV_HfCor@~DafAJmBLoBJqADm@ViC`@{DXoCZqCd@cEvFeh@l@{FPeBPoBL}AHeAHoAJqBH{CHkE@_@?_@DkDFiH@_@FaGH}JFwH@gBN_PDoEN{QD{F@}ABmBF}H@oCDcD@g@?G?Q?_@FqFDsEBmBHmDHmC@SHyAJwBD}@XoENeBXoDJeAL}@TuBNiAR_BVkBd@aDPeAj@iDDWH_@fLiq@pA{HX_Bh@{CRmAlAgHj@kD\\sBdAgGb@aCdAiF`@kBhAkFtCoLVeAbAoDv@oCtCoJ`@qAnR}n@`Omf@rCyIrAoEz@sCtBiHp@}B`FcQzC{KvAmF|AkGbAsDdAyDfBwGlCyJp@eCt@qCbAsDl@}Br@uCbAiEf@{BXoAd@}B\\}Ad@_Cb@_CX}AbAcGn@_En@iEj@cEb@iDd@cEl@mF\\mDd@gFh@oG~@qN"
+              },
+              "duration": {
+                "text": "21 mins",
+                "value": 1236
+              },
+              "end_location": {
+                "lat": 52.0149064,
+                "lng": 5.6480943
+              }
+            },
+            {
+              "html_instructions": "Take exit <b>24-Wageningen</b> toward <b>Wageningen</b>/<b>Bennekom</b>",
+              "distance": {
+                "text": "0.5 km",
+                "value": 484
+              },
+              "travel_mode": "DRIVING",
+              "maneuver": "ramp-right",
+              "start_location": {
+                "lat": 52.0149064,
+                "lng": 5.6480943
+              },
+              "polyline": {
+                "points": "edn|Hqcna@NgAD_@`@mGLqBPqDDu@@Q@SBKBOBOH[NYHOHMLKDCHCJAHAHAP?JBHBHBFDFDFFHFBDDHDL@BBFHJDNDP@NBNBf@@h@"
+              },
+              "duration": {
+                "text": "1 min",
+                "value": 56
+              },
+              "end_location": {
+                "lat": 52.01312189999999,
+                "lng": 5.6514448
+              }
+            },
+            {
+              "html_instructions": "Turn <b>left</b> onto <b>Dr. W. Dreeslaan</b>/<b>N781</b><div style=\"font-size:0.9em\">Continue to follow N781</div>",
+              "distance": {
+                "text": "3.1 km",
+                "value": 3113
+              },
+              "travel_mode": "DRIVING",
+              "maneuver": "turn-left",
+              "start_location": {
+                "lat": 52.01312189999999,
+                "lng": 5.6514448
+              },
+              "polyline": {
+                "points": "_ym|Hoxna@?H@H?T@RJCLCXG\\ILEVG^OdAY`@G^GzAUtB[zAUpB[h@Id@Ih@Od@K|@_@h@YNId@]v@i@`BmA|AmAnA_Af@YJG@ALKzMuJ\\U~DuCDCPMNMLILKvG{EhQuM`MeJ`BoAhE_DFGTONMFEHGbE{CzCyBDErEmE|IaHnDmC~@m@RMTO"
+              },
+              "duration": {
+                "text": "3 mins",
+                "value": 203
+              },
+              "end_location": {
+                "lat": 51.9877733,
+                "lng": 5.6690901
+              }
+            },
+            {
+              "html_instructions": "At the roundabout, take the <b>2nd</b> exit onto <b>Mansholtlaan</b>/<b>N781</b><div style=\"font-size:0.9em\">Continue to follow Mansholtlaan</div>",
+              "distance": {
+                "text": "1.2 km",
+                "value": 1208
+              },
+              "travel_mode": "DRIVING",
+              "maneuver": "roundabout-right",
+              "start_location": {
+                "lat": 51.9877733,
+                "lng": 5.6690901
+              },
+              "polyline": {
+                "points": "qzh|Hyfra@BDB@B@B@F?FANKBG@IBI?I?G@GlA_AxFuELKz@s@rAcA`@]b@[`BqAh@a@hA}@nAcA~AsAFGV]P]HMRg@r@cBRe@BGDIDSFQRy@ReALaARqB@WB]LsAV}Ab@gB`@gAd@_Ah@y@n@u@PEJG~@m@"
+              },
+              "duration": {
+                "text": "2 mins",
+                "value": 131
+              },
+              "end_location": {
+                "lat": 51.97980980000001,
+                "lng": 5.679695
+              }
+            },
+            {
+              "html_instructions": "At the roundabout, continue straight onto <b>Diedenweg</b><div style=\"font-size:0.9em\">Go through 1 roundabout</div>",
+              "distance": {
+                "text": "1.0 km",
+                "value": 993
+              },
+              "travel_mode": "DRIVING",
+              "maneuver": "roundabout-right",
+              "start_location": {
+                "lat": 51.97980980000001,
+                "lng": 5.679695
+              },
+              "polyline": {
+                "points": "yhg|Hcita@@@?@@@@@@@@@@?@?@?@?@?@?@A@??A@?@A@C@A?A@A?A@A?A?A?A@AXU`@WFI\\OrAk@PGXKj@Qh@K|AKLFB?t@Gt@KNKtAGnAMBArAW`ASx@W?@?@@??@?@?@@@?@@@?@@??@@??@@??@@?@?@?@?@?@?@A@??A@??A@A?A@??A?A@??A?A?A?A?A@??A?A?A?A?Ar@Gx@MxAc@^OjAk@`CeAfASTAR?jAUPEx@M"
+              },
+              "duration": {
+                "text": "2 mins",
+                "value": 119
+              },
+              "end_location": {
+                "lat": 51.9712747,
+                "lng": 5.6825646
+              }
+            },
+            {
+              "html_instructions": "Turn <b>right</b> onto <b>Ritzema Bosweg</b>/<b>N225</b><div style=\"font-size:0.9em\">Continue to follow N225</div>",
+              "distance": {
+                "text": "1.2 km",
+                "value": 1218
+              },
+              "travel_mode": "DRIVING",
+              "maneuver": "turn-right",
+              "start_location": {
+                "lat": 51.9712747,
+                "lng": 5.6825646
+              },
+              "polyline": {
+                "points": "mse|H_{ta@B`@J|APxATzBHh@PbBp@bId@xF\\`EJdAP|BD`@BXBTBZDZFr@BZBXBV@ND^EVd@pFJ\\F~@b@`GDr@b@nGAX?pA?@Ad@AVAh@Aj@HbCD|@Bj@FvAJ`CCLADAFCD?@"
+              },
+              "duration": {
+                "text": "3 mins",
+                "value": 150
+              },
+              "end_location": {
+                "lat": 51.9691139,
+                "lng": 5.6652793
+              }
+            }
+          ],
+          "duration": {
+            "text": "39 mins",
+            "value": 2349
+          },
+          "end_location": {
+            "lat": 51.9691139,
+            "lng": 5.6652793
+          }
+        }
+      ]
+    }
+  ]
+}
