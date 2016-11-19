@@ -2,11 +2,8 @@ from __future__ import print_function
 from flask import Flask, jsonify, request
 import sys
 import datetime
-import mock
-import geo
-import config
-import plan
-
+from server import mock, config, plan
+from server.apis import geo
 
 def debug(obj):
     print(obj, file=sys.stderr)
