@@ -4,6 +4,7 @@ import sys
 import datetime
 from server import config, plan
 from server.apis import geo
+from data import Prompt
 
 # Mocking for demo
 from server import (
@@ -24,7 +25,6 @@ def debug(obj):
 
 
 app = Flask("superplan")
-
 
 def object_to_dict(obj):
     """Utility function for converting class objects to dictionaries."""
@@ -55,27 +55,33 @@ def root():
             "See https://github.com/Wassasin/superplan for my interface.")
 
 
-@app.route("/schedule")
+@app.route("/schedule", methods=["GET"])
 def getSchedule():
+    time = request.args.get('time', None)
+    if time is not None:
+        hours = time[:2]
+        minutes = time[3:5]
+        time = datetime.time(hour=int(hours), minute=int(minutes))
+
     conf = config.Config()
     g = geo.Geo(conf.get('google-key'))
-    events = map(object_to_dict, plan.plan(timeline, g, commutePlanner).events)
-    return jsonify(events=events)
 
+    concrete_timeline = plan.plan(timeline, g, commutePlanner).events
+    my_prompts = []
+    for e in concrete_timeline:
+        if e.description == "sleep":
+            p = Prompt(e.startTime + e.duration, "Wake up", ["I have awoken"])
 
-@app.route("/prompts", methods=["GET"])
-def getPrompts():
-    time = request.args.get('time', None)
-    hours = time[:2]
-    minutes = time[3:5]
-    time = datetime.time(hour=int(hours), minute=int(minutes))
-    if time is not None:
-        # Do mocking.
-        prompts = prompt_generator(time)
-    else:
-        # Don't do mocking.
-        prompts = []
-    return jsonify(prompts=prompts)
+            if time is not None:
+                # Do mocking.
+                p = prompt_generator(time)
+
+            my_prompts.append(p)
+
+    prompts = map(object_to_dict, my_prompts)
+    events = map(object_to_dict, concrete_timeline)
+
+    return jsonify(events=events, prompts=prompts)
 
 
 @app.route("/resolve/<int:eventId>/cancel", methods=["POST"])

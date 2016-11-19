@@ -1,5 +1,6 @@
 import requests
 import datetime
+import json
 
 
 class ClientState:
@@ -44,8 +45,11 @@ class Client:
             current_time += datetime.timedelta(minutes=30)
 
     def get_new_state(self, current_time=None):
-        prompts = self.get_prompts(current_time)
-        schedule = self.get_schedule()
+        vals = self.get_schedule(current_time)
+        print(vals)
+        vals = json.loads(vals)
+        print(vals)
+        schedule, prompts = vals["events"], vals["prompts"]
         state = ClientState(prompts, schedule)
         return state
 
@@ -56,22 +60,19 @@ class Client:
             params = {}
         return requests.get(url, params).text
 
-    def get_schedule(self):
-        return self.do_query('schedule')
+    def get_schedule(self, timedelta_obj=None):
 
-    def get_prompts(self, timedelta_obj=None):
         # TODO TdR 19/11/16: add get request argument.
         if timedelta_obj is not None:
             time_obj = (datetime.datetime.min + timedelta_obj).time()
-            return self.do_query('prompts', {'time': str(time_obj)})
-        return self.do_query('prompts')
+            return self.do_query('schedule', {'time': str(time_obj)})
+        return self.do_query('schedule')
 
 
 def smoke_test():
     c = Client()
     print(c.do_query(''))
     print(c.get_schedule())
-    print(c.get_prompts())
     return True
 
 
