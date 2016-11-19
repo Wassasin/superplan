@@ -1,8 +1,36 @@
 from __future__ import print_function
 import sys
 from flask import Flask, jsonify, request
+import datetime
+import mock
+
+def debug(obj):
+    print(obj, file=sys.stderr)
 
 app = Flask("superplan")
+
+timeline = mock.timeline
+
+def object_to_dict(obj):
+    """Utility function for converting class objects to dictionaries."""
+    if isinstance(obj, datetime.timedelta):
+        return obj.seconds
+
+    if not hasattr(obj, "__dict__"):
+        return obj
+
+    result = {}
+    for key, val in obj.__dict__.items():
+        if key.startswith("_"):
+            continue
+        element = []
+        if isinstance(val, list):
+            for item in val:
+                element.append(object_to_dict(item))
+        else:
+            element = object_to_dict(val)
+        result[key] = element
+    return dict(result)
 
 @app.route("/")
 def root():
@@ -10,8 +38,7 @@ def root():
 
 @app.route("/schedule")
 def getSchedule():
-    events = []
-
+    events = map(object_to_dict, timeline.events)
     return jsonify(events=events)
 
 @app.route("/prompts")

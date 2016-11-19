@@ -3,41 +3,10 @@ import data
 import datetime
 import geo
 import config
+import mock
 
-today = datetime.datetime.now().date()
-
-tl = data.Timeline()
-
-tl.append(data.Event(
-        None,
-        datetime.timedelta(hours=8),
-        None,
-        "sleep"
-    ))
-tl.append(data.Event(
-        None,
-        datetime.timedelta(hours=1),
-        None,
-        "morning routine"
-    ))
-tl.append(data.Event(
-        datetime.datetime.combine(today, datetime.time(hour=8, minute=30)),
-        datetime.timedelta(hours=4),
-        "Work, Nijmegen",
-        "work"
-    ))
-tl.append(data.Event(
-        None,
-        datetime.timedelta(hours=1, minutes=0),
-        None,
-        "lunch"
-    ))
-tl.append(data.Event(
-        datetime.datetime.combine(today, datetime.time(hour=14, minute=00)),
-        datetime.timedelta(hours=1),
-        "Work, Nijmegen",
-        "meeting with Boss"
-    ))
+today = mock.today
+tl = mock.timeline
 
 print 'conflict', util.isConflict(tl)
 s = data.State()
