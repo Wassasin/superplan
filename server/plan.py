@@ -12,16 +12,20 @@ def spoolRevToFixed(it):
     except StopIteration:
         return None
 
-class commutePlanner:
+class CommutePlanner:
     def __init__(self, options=['walking', 'walking', 'bicycling', 'transit']):
         self.options = options
 
-    def plan(self, g, a, b, arrival_time):
+    def plan(self, a, b, arrival_time, g):
         fastest = None
-        for o in options:
-            l = g.directions(it.current().location, s.location, s.now, mode=o)[0]["legs"][0]
+        for o in self.options:
+            l = g.directions(a, b, arrival_time, mode=o)[0]["legs"][0]
             duration = datetime.timedelta(seconds=l["duration"]["value"])
-            startTime = datetime.datetime.fromtimestamp(l["departure_time"]["value"])
+            if "departure_time" in l:
+                startTime = datetime.datetime.fromtimestamp(l["departure_time"]["value"])
+            else:
+                startTime = arrival_time - duration
+
             if fastest is None or duration < fastest[1]:
                 fastest = (startTime, duration, o)
 
@@ -41,7 +45,7 @@ def plan(timeline, g, cp):
         while True:
             it.prev()
             if it.current().location is not None and s.location != it.current().location:
-                startTime, duration, mode = cp.plan(it.current().location, s.location, s.now)
+                startTime, duration, mode = cp.plan(it.current().location, s.location, s.now, g)
                 e = data.Event(startTime, duration, it.current().location, "commute by "+mode)
                 s.updateRev(e)
                 newEvents.append(e)

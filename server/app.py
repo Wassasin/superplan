@@ -10,8 +10,11 @@ from server import (
     mock, mock_scenario2
 )
 
+global timeline
 timeline = None
 
+global commutePlanner
+commutePlanner = None
 
 def debug(obj):
     print(obj, file=sys.stderr)
@@ -53,7 +56,7 @@ def root():
 def getSchedule():
     conf = config.Config()
     g = geo.Geo(conf.get('google-key'))
-    events = map(object_to_dict, plan.plan(timeline, g).events)
+    events = map(object_to_dict, plan.plan(timeline, g, commutePlanner).events)
     return jsonify(events=events)
 
 
@@ -91,7 +94,7 @@ def select_scenario(scenario_nr=0):
 
 
 if __name__ == "__main__":
-    global timeline
-
     timeline = select_scenario(scenario_nr=2)
+    commutePlanner = plan.CommutePlanner()
+
     app.run(host='0.0.0.0', debug=True)

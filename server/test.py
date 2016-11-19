@@ -25,8 +25,9 @@ print 'next', nextEvent
 conf = config.Config()
 
 g = geo.Geo(conf.get('google-key'))
+cp = plan.CommutePlanner()
 
-plan.plan(tl, g)
+plan.plan(tl, g, cp)
 
 #w = weather.WeatherAPI(conf.get('darksky-key'))
 #w.get(50, 3)
