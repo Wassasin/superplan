@@ -70,11 +70,15 @@ def getSchedule():
     my_prompts = []
     for e in concrete_timeline:
         if e.description == "sleep":
+            e.duration -= datetime.timedelta(minutes=30)
             p = Prompt(e.startTime + e.duration, "Wake up", ["I have awoken"])
 
             if time is not None:
                 # Do mocking.
-                p = prompt_generator(time)
+                mockp = prompt_generator(time)
+                if mockp is not None:
+                    p.description = mockp.description
+                    p.answers = mockp.answers
 
             my_prompts.append(p)
 

@@ -46,9 +46,7 @@ class Client:
 
     def get_new_state(self, current_time=None):
         vals = self.get_schedule(current_time)
-        print(vals)
         vals = json.loads(vals)
-        print(vals)
         schedule, prompts = vals["events"], vals["prompts"]
         state = ClientState(prompts, schedule)
         return state
