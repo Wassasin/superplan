@@ -36,6 +36,3 @@ timeline.append(data.Event(
         "Agro Businesspark 99, Wageningen",
         "General work"
     ))
-
-
-weather = w.WeatherResponse()

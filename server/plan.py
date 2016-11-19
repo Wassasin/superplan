@@ -26,8 +26,8 @@ class CommutePlanner:
             else:
                 startTime = arrival_time - duration
 
-            if fastest is None or duration < fastest[1]:
-                fastest = (startTime, duration, o)
+            if fastest is None or duration < fastest.duration:
+                fastest = data.Event(startTime, duration, a, "commute by "+o)
 
         return fastest
 
@@ -45,8 +45,7 @@ def plan(timeline, g, cp):
         while True:
             it.prev()
             if it.current().location is not None and s.location != it.current().location:
-                startTime, duration, mode = cp.plan(it.current().location, s.location, s.now, g)
-                e = data.Event(startTime, duration, it.current().location, "commute by "+mode)
+                e = cp.plan(it.current().location, s.location, s.now, g)
                 s.updateRev(e)
                 newEvents.append(e)
 
