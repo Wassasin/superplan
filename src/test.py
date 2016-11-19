@@ -22,4 +22,4 @@ print 'next', nextEvent
 conf = config.Config()
 
 g = geo.Geo(conf.get('google-key'))
-print g.directions('St. Annastraat 1 Nijmegen', 'Sophiaweg 1 Nijmegen', nextEvent.startTime)
+print g.directions('Jadelaan 2 Utrecht', 'MeteoGroup Wageningen', arrival=nextEvent.startTime, mode="driving")
