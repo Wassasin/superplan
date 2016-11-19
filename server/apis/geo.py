@@ -11,9 +11,15 @@ class Geo:
 
     def resolve(self, loc):
         key = str(loc)
-        return self.dirCache.handle(
+        result = self.dirCache.handle(
             key,
             lambda: self.gmaps.geocode(loc))
+
+        if len(result) == 0:
+            return None
+
+        loc = result[0]["geometry"]["location"]
+        return (loc["lat"], loc["lng"])
 
     def directions(self, a, b, arrival=None, mode="transit"):
         key = ':'.join(map(str, [a, b, arrival, mode]))

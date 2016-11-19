@@ -41,9 +41,6 @@ timeline.append(data.Event(
     ))
 
 
-weather = w.WeatherResponse()
-
-
 def prompt_generator(query_time):
 
     if time(hour=0) < query_time <= time(hour=5, minute=30):

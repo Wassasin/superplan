@@ -1,8 +1,8 @@
 import data
 import datetime
-import server.apis.weather as w
 
-today = datetime.datetime.now().date()
+
+today = datetime.datetime.now().date() + datetime.timedelta(days=1)
 
 timeline = data.Timeline()
 
@@ -36,8 +36,3 @@ timeline.append(data.Event(
         "Sophiaweg 1 Nijmegen",
         "meeting with Boss"
     ))
-
-weather = w.WeatherResponse()
-
-def prompt_generator():
-    None

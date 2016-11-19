@@ -29,5 +29,8 @@ cp = plan.CommutePlanner()
 
 plan.plan(tl, g, cp)
 
-#w = weather.WeatherAPI(conf.get('darksky-key'))
-#w.get(50, 3)
+w = weather.WeatherAPI(conf.get('darksky-key'))
+lat, lng = g.resolve("Sint Annastraat 1")
+wint = weather.WeatherInt(w)
+print wint.mustScrapeCar(lat, lng, now)
+print wint.isRaining(lat, lng, now)
