@@ -4,8 +4,10 @@ import sys
 import datetime
 import mock
 
+
 def debug(obj):
     print(obj, file=sys.stderr)
+
 
 app = Flask("superplan")
 

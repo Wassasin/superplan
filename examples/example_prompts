@@ -1,0 +1,28 @@
+{
+  “ID”: 1,
+  “Description”: “Your train had some delay, we can take the bus, subway or next train, they all take about the same time.“,
+  “Answers”: [
+    { “ID”: 1, “Description”: “Bus“ },
+    { “ID”: 2, “Description”: “Subway“ },
+    { “ID”: 3, “Description”: “Train“ }
+  ]
+}
+
+{
+  “ID”: 1,
+  “Description”: “To get home, we can take the bus, subway or next train, they all take about the same time, price is equal-ish too. Walking is also an option, but takes a bit longer.“,
+  “Answers”: [
+    {
+      “ID”: 1, “Description”: “Bus“
+    },
+    {
+      “ID”: 2, “Description”: “Subway“
+    },
+    {
+      “ID”: 3, “Description”: “Train“
+    },
+    {
+      “ID”: 4, “Description”: “Walking, +10 minutes“
+    }
+  ]
+}

@@ -3,25 +3,49 @@ import sys
 import time
 
 
+class ClientState:
+
+    def __init__(self, prompts, schedule):
+        self.prompts = prompts
+        self.schedule = schedule
+
+    def __eq__(self, state):
+        return str(self.prompts) == str(state.prompts) and \
+               self.schedule == state.schedule
+
+    def __ne__(self, state):
+        return not self.__eq__(state)
+
+
 class Client:
 
     def __init__(self):
         self.server_url = 'http://127.0.0.1:5000/'
         self.refresh_rate = 1  # Refresh rate in seconds
-        self.previous_prompts = None
+        self.previous_state = ClientState(None, None)
 
     def run(self):
 
         while True:
-            new_prompts = self.get_prompts()
-            if new_prompts != self.previous_prompts:
-                print("New prompts!")
-                print(new_prompts)
-                self.previous_prompts = new_prompts
+            state = self.get_new_state()
 
-                # TODO TdR 19/11/16: do something with user input.
+            if state == self.previous_state:
+                continue
+
+            print("New things!")
+            print(state.prompts)
+            print(state.schedule)
+            self.previous_state = state
+
+            # TODO TdR 19/11/16: do something with user input.
 
             time.sleep(self.refresh_rate)
+
+    def get_new_state(self):
+        prompts = self.get_prompts()
+        schedule = self.get_schedule()
+        state = ClientState(prompts, schedule)
+        return state
 
     def do_query(self, fun_name):
         url = self.server_url + fun_name
