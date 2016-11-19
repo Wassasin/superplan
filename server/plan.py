@@ -13,7 +13,8 @@ def spoolRevToFixed(it):
         return None
 
 class CommutePlanner:
-    def __init__(self, options=['walking', 'walking', 'bicycling', 'transit']):
+    def __init__(self, wint, options=['walking', 'driving', 'bicycling', 'transit']):
+        self.wint = wint
         self.options = options
 
     def plan(self, a, b, arrival_time, g):
@@ -26,8 +27,22 @@ class CommutePlanner:
             else:
                 startTime = arrival_time - duration
 
+            a_lat, a_lng = g.resolve(a)
+            b_lat, b_lng = g.resolve(b)
+
+            descr = o
+
+            if o == 'walking':
+                if self.wint.isRaining(a_lat, a_lng, startTime):
+                    descr += " (bring umbrella)"
+
+            if o == 'driving':
+                if self.wint.mustScrapeCar(a_lat, a_lng, startTime):
+                    duration += datetime.timedelta(minutes=5)
+                    descr += " (car needs scraping)"
+
             if fastest is None or duration < fastest.duration:
-                fastest = data.Event(startTime, duration, a, "commute by "+o)
+                fastest = data.Event(startTime, duration, a, "commute by "+descr)
 
         return fastest
 

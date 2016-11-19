@@ -15,10 +15,18 @@ class WeatherInt:
         return None
 
     def mustScrapeCar(self, latitude, longitude, time):
-        return self.getFromSeries(latitude, longitude, time)["temperature"] <= 0
+        data = self.getFromSeries(latitude, longitude, time)
+        if data is None:
+            return None
+
+        return data["temperature"] <= 0
 
     def isRaining(self, latitude, longitude, time):
-        return self.getFromSeries(latitude, longitude, time)["precipProbability"] > 0.3
+        data = self.getFromSeries(latitude, longitude, time)
+        if data is None:
+            return None
+
+        return data["precipProbability"] > 0.3
 
 class WeatherAPI:
     def __init__(self, key):

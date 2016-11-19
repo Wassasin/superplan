@@ -3,7 +3,7 @@ from flask import Flask, jsonify, request
 import sys
 import datetime
 from server import config, plan
-from server.apis import geo
+from server.apis import geo, weather
 from data import Prompt
 
 # Mocking for demo
@@ -16,6 +16,15 @@ timeline = None
 
 global commutePlanner
 commutePlanner = None
+
+global w
+w = None
+
+global wint
+wint = None
+
+global g
+g = None
 
 def debug(obj):
     print(obj, file=sys.stderr)
@@ -58,8 +67,6 @@ def getSchedule(time=None):
         # Do mocking.
         pass
     else:
-        conf = config.Config()
-        g = geo.Geo(conf.get('google-key'))
         concrete_timeline = plan.plan(timeline, g, commutePlanner).events
         my_prompts = []
         for e in concrete_timeline:
@@ -93,6 +100,10 @@ def select_scenario(scenario_nr=0):
 
 if __name__ == "__main__":
     timeline = select_scenario(scenario_nr=2)
-    commutePlanner = plan.CommutePlanner()
+    conf = config.Config()
+    w = weather.WeatherAPI(conf.get('darksky-key'))
+    g = geo.Geo(conf.get('google-key'))
+    wint = weather.WeatherInt(w)
+    commutePlanner = plan.CommutePlanner(wint)
 
     app.run(host='0.0.0.0', debug=True)
