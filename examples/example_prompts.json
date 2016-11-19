@@ -25,4 +25,13 @@
       "ID": "4", "Description": "Walking, +10 minutes"
     }
   ]
-}]
+},
+
+{
+  "ID": "3",
+  "Description":"It was freezing last night, so I woke you up half an hour early to make sure you are on time. Hope you slept well. Prepare for a cold and sunny day: clear the ice of your windows and don't forget your gloves and sunglasses.",
+  "Answers": [
+    { "ID": "1", "Description": "OK" },
+  ]
+}
+]
