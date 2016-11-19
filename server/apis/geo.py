@@ -1,6 +1,6 @@
 import googlemaps
 
-from cache import Cache
+from server.cache import Cache
 
 
 class Geo:
