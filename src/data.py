@@ -26,8 +26,8 @@ class Event:
 
 
 class BiIterator:
-    def __init__(self, subject):
-        self.i = 0
+    def __init__(self, subject, i = -1):
+        self.i = i
         self.subject = subject
 
     def next(self):
@@ -35,14 +35,12 @@ class BiIterator:
             raise StopIteration
 
         self.i += 1
-        return self.current()
 
     def prev(self):
         if self.i <= 0:
             raise StopIteration
 
         self.i -= 1
-        return self.current()
 
     def current(self):
         return self.subject[self.i]
@@ -50,8 +48,8 @@ class BiIterator:
 
 class Timeline:
 
-    def __init__(self):
-        self.events = []
+    def __init__(self, events=[]):
+        self.events = list(events)
 
     def __len__(self):
         return len(self.events)
@@ -62,11 +60,23 @@ class Timeline:
     def append(self, e):
         self.events.append(e)
 
-    def iter(self):
-        return BiIterator(self)
+    def begin(self):
+        return BiIterator(self, -1)
+
+    def end(self):
+        return BiIterator(self, len(self.events))
 
 
 class State:
-    def __init__(self):
-        self.now = datetime.datetime.now()
-        self.location = None
+    def __init__(self, event): # fixed event, with location
+        self.now = event.startTime
+        self.location = event.location
+
+    def updateRev(self, event):
+        if event.startTime is not None:
+            self.now = event.startTime
+        else:
+            self.now -= event.duration
+
+        if event.location is not None:
+            self.location = event.location

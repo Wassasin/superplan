@@ -3,6 +3,9 @@ from flask import Flask, jsonify, request
 import sys
 import datetime
 import mock
+import geo
+import config
+import plan
 
 def debug(obj):
     print(obj, file=sys.stderr)
@@ -41,7 +44,9 @@ def root():
 
 @app.route("/schedule")
 def getSchedule():
-    events = map(object_to_dict, timeline.events)
+    conf = config.Config()
+    g = geo.Geo(conf.get('google-key'))
+    events = map(object_to_dict, plan.plan(timeline, g).events)
     return jsonify(events=events)
 
 

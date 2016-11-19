@@ -4,17 +4,18 @@ import datetime
 import geo
 import config
 import mock
+import plan
 
 today = mock.today
 tl = mock.timeline
-
+now = datetime.datetime.combine(today, datetime.time(hour=7, minute=0))
 print 'conflict', util.isConflict(tl)
-s = data.State()
 
-pair = util.whatNow(tl, datetime.datetime.combine(today, datetime.time(hour=7, minute=0)))
+it = util.whatNow(tl, now)
 
-currentEvent, it = pair
-nextEvent = it.next()
+currentEvent = it.current()
+it.next()
+nextEvent = it.current()
 
 print 'current', currentEvent
 print 'next', nextEvent
@@ -22,4 +23,8 @@ print 'next', nextEvent
 conf = config.Config()
 
 g = geo.Geo(conf.get('google-key'))
-print g.directions('Jadelaan 2 Utrecht', 'MeteoGroup Wageningen', arrival=nextEvent.startTime, mode="driving")
+
+# print g.directions("Sophiaweg 1", "St. Annastraat 1 Nijmegen", now)
+# print g.resolve("Netherlands, Arnhem, Centraal Station")
+
+plan.plan(tl, g)

@@ -14,13 +14,13 @@ timeline.append(data.Event(
 timeline.append(data.Event(
         None,
         datetime.timedelta(hours=1),
-        None,
+        "Sophiaweg 1",
         "morning routine"
     ))
 timeline.append(data.Event(
         datetime.datetime.combine(today, datetime.time(hour=8, minute=30)),
         datetime.timedelta(hours=4),
-        "Work, Nijmegen",
+        "St. Annastraat 1 Nijmegen",
         "work"
     ))
 timeline.append(data.Event(
@@ -32,6 +32,6 @@ timeline.append(data.Event(
 timeline.append(data.Event(
         datetime.datetime.combine(today, datetime.time(hour=14, minute=00)),
         datetime.timedelta(hours=1),
-        "Work, Nijmegen",
+        "Sophiaweg 1 Nijmegen",
         "meeting with Boss"
     ))
