@@ -2,7 +2,7 @@ import data
 import datetime
 import server.apis.weather as w
 
-today = datetime.datetime.now().date()
+today = datetime.datetime.now().date() + datetime.timedelta(days=1)
 
 timeline = data.Timeline()
 

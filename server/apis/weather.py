@@ -1,8 +1,24 @@
 import requests
-
+import datetime
 
 from server.cache import Cache
 
+class WeatherInt:
+    def __init__(self, api):
+        self.api = api
+
+    def getFromSeries(self, latitude, longitude, time):
+        series = self.api.get(latitude, longitude)["hourly"]["data"]
+        for s in series:
+            if time <= datetime.datetime.fromtimestamp(s["time"]) <= time + datetime.timedelta(hours=1):
+                return s
+        return None
+
+    def mustScrapeCar(self, latitude, longitude, time):
+        return self.getFromSeries(latitude, longitude, time)["temperature"] <= 0
+
+    def isRaining(self, latitude, longitude, time):
+        return self.getFromSeries(latitude, longitude, time)["precipProbability"] > 0.3
 
 class WeatherAPI:
     def __init__(self, key):

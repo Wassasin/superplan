@@ -31,4 +31,6 @@ plan.plan(tl, g, cp)
 
 w = weather.WeatherAPI(conf.get('darksky-key'))
 lat, lng = g.resolve("Sint Annastraat 1")
-print w.get(lat, lng)
+wint = weather.WeatherInt(w)
+print wint.mustScrapeCar(lat, lng, now)
+print wint.isRaining(lat, lng, now)
