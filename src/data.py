@@ -1,8 +1,10 @@
 import datetime
 
+
 class Event:
-    def __init__(self, startTime, duration, location, description, participants=[]):
-        self.startTime = startTime
+    def __init__(
+            self, start_time, duration, location, description, participants=[]):
+        self.startTime = start_time
         self.duration = duration
         self.location = location
         self.description = description
@@ -14,12 +16,14 @@ class Event:
             result += 'Fluid '
         else:
             result += 'Fixed '
-            result += str(self.startTime) + ' to ' + str(self.startTime + self.duration) + ' '
+            result += str(self.startTime) + ' to ' + \
+                      str(self.startTime + self.duration) + ' '
 
         result += '(' + str(self.duration) + ') '
         result += '@ ' + str(self.location) + ' '
         result += self.description
         return result
+
 
 class BiIterator:
     def __init__(self, subject):
@@ -43,6 +47,7 @@ class BiIterator:
     def current(self):
         return self.subject[self.i]
 
+
 class Timeline:
 
     def __init__(self):
@@ -59,6 +64,7 @@ class Timeline:
 
     def iter(self):
         return BiIterator(self)
+
 
 class State:
     def __init__(self):

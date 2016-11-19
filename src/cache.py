@@ -1,6 +1,7 @@
 import json
 import os
 
+
 class Cache:
     def __init__(self, name):
         self.path = './cache/cache-'+name+'.json'
