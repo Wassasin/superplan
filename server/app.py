@@ -4,6 +4,7 @@ import sys
 import datetime
 from server import config, plan
 from server.apis import geo
+from data import Prompt
 
 # Mocking for demo
 from server import (
@@ -21,7 +22,6 @@ def debug(obj):
 
 
 app = Flask("superplan")
-
 
 def object_to_dict(obj):
     """Utility function for converting class objects to dictionaries."""
@@ -53,25 +53,23 @@ def root():
 
 
 @app.route("/schedule")
-def getSchedule():
-    conf = config.Config()
-    g = geo.Geo(conf.get('google-key'))
-    events = map(object_to_dict, plan.plan(timeline, g, commutePlanner).events)
-    return jsonify(events=events)
-
-
-@app.route("/prompts")
-def getPrompts(time=None):
+def getSchedule(time=None):
     if time is not None:
         # Do mocking.
         pass
     else:
-        # Don't do mocking.
-        pass
+        conf = config.Config()
+        g = geo.Geo(conf.get('google-key'))
+        concrete_timeline = plan.plan(timeline, g, commutePlanner).events
+        my_prompts = []
+        for e in concrete_timeline:
+            if e.description == "sleep":
+                p = Prompt(e.startTime + e.duration, "Wake up", ["I have awoken"])
+                my_prompts.append(p)
 
-    prompts = []
-    return jsonify(prompts=prompts)
-
+        prompts = map(object_to_dict, my_prompts)
+        events = map(object_to_dict, concrete_timeline)
+        return jsonify(events=events,prompts=prompts)
 
 @app.route("/resolve/<int:eventId>/cancel", methods=["POST"])
 def resolveCancel(eventId):

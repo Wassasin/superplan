@@ -80,3 +80,9 @@ class State:
 
         if event.location is not None:
             self.location = event.location
+
+class Prompt:
+    def __init__(self, time, description, answers):
+        self.time = time
+        self.description = description
+        self.answers = answers
